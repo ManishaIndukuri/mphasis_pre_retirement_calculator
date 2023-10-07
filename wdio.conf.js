@@ -52,7 +52,10 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        browserVersion: 'latest'
+        browserVersion: 'stable',
+        'goog:chromeOptions': {
+            args: ['--ignore-certificate-errors']
+        },
     }],
 
     //
